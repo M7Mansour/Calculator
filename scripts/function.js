@@ -100,6 +100,8 @@ function toggler() {
     let value = parseFloat(screen.value);
     if (Number.isNaN(value))
         return;
+    if (Number.isInteger(value))
+        point = false;
     screen.value = -value;
     total = -total;
 }
