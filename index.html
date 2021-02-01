@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+
+<head>
+    <link rel="icon" href="https://cdn.iconscout.com/icon/free/png-512/calculator-716-461701.png">
+    <title>M7M Calculator</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="scripts/function.js"></script>
+
+</head>
+
+<body>
+    <div id="calculator">
+        <input type="text" id="screen" readonly value="0">
+        <div id="currency-conv">
+            <button class="currency" value="sh-us">SH/US</button>
+            <button class="currency" value="us-sh">US/SH</button>
+            <button class="currency" value="sh-eu">SH/EU</button>
+            <button class="currency" value="eu-sh">EU/SH</button>
+        </div>
+        <div id="wraper">
+            <div id="numbers">
+                <button class="number">1</button>
+                <button class="number">2</button>
+                <button class="number">3</button>
+                <button class="number">4</button>
+                <button class="number">5</button>
+                <button class="number">6</button>
+                <button class="number">7</button>
+                <button class="number">8</button>
+                <button class="number">9</button>
+                <button class="number symb">.</button>
+                <button class="number">0</button>
+                <button id="blus-minus" class="symb">+/-</button>
+            </div>
+            <div id="operators">
+                <button id="divide" class="operator" value="/">/</button>
+                <button id="clear" class="operator" value="c">C</button>
+                <div id="special">
+                    <button id="multiply" class="operator" value="*">x</button>
+                    <button id="subtract" class="operator" value="-">-</button>
+                </div>
+                <button id="add" class="operator" value="+">+</button>
+                <button id="equals" class="operator" value="=">=</button>
+            </div>
+        </div>
+    </div>
+    <script>
+        let screen = document.getElementById("screen");
+        let opeButtons = document.getElementsByClassName("operator");
+        for (let i = 0; i < opeButtons.length; i++) {
+            opeButtons[i].onclick = function(e) {
+                operate(this.value);
+            };
+        }
+
+        let currencyButtons = document.getElementsByClassName("number");
+        for (let i = 0; i < currencyButtons.length; i++) {
+            currencyButtons[i].onclick = function(e) {
+                screenNumbers(this.innerHTML);
+            };
+        }
+
+
+        let numButtons = document.getElementsByClassName("currency");
+        for (let i = 0; i < numButtons.length; i++) {
+            numButtons[i].onclick = function(e) {
+                converte(this.value);
+            };
+        }
+        let toggle = document.getElementById("blus-minus");
+        toggle.addEventListener("click", toggler);
+    </script>
+</body>

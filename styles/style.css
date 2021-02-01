@@ -1,0 +1,170 @@
+body {
+    background-image: url(https://i.pinimg.com/736x/21/39/3c/21393c41e9afb4beb99e32a5be5f3655.jpg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#calculator {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 600px;
+    border-radius: 5px 5px 0px 0px;
+}
+
+button {
+    border: 1px solid #e7e7e7;
+    background-color: white;
+    font-size: 20px;
+    outline: none;
+    color: white;
+}
+
+button:active {
+    cursor: pointer;
+}
+
+#screen {
+    width: 98%;
+    height: 50px;
+    font-size: 30px;
+    border-radius: 5px 5px 0px 0px;
+    border-color: transparent;
+    background-color: #faf6f6;
+    outline: none;
+    color: grey;
+}
+
+#currency-conv {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.currency {
+    height: 80px;
+    width: 25%;
+    background-color: #aaaaaa;
+}
+
+.currency:hover {
+    background-color: #919090;
+}
+
+.currency:active {
+    background-color: #5c5c5c;
+}
+
+#wraper {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+#numbers {
+    display: flex;
+    flex-wrap: wrap;
+    width: 70%;
+}
+
+.number {
+    width: 33.3333333333%;
+    height: 80px;
+    border-radius: 0px;
+    background-color: #FEDA43;
+    color: #6b5b95;
+}
+
+.number:hover {
+    background-color: #eec935;
+}
+
+.number:active {
+    background-color: #dab525;
+}
+
+.symb {
+    background-color: #b7b7a4;
+    color: white;
+    width: 33.3333333333%;
+    height: 80px;
+    border-radius: 0px;
+}
+
+.symb:hover {
+    background-color: #a1a193;
+}
+
+.symb:active {
+    background-color: #757569;
+}
+
+#operators {
+    width: 30%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.operator {
+    height: 80px;
+    width: 50%;
+    background-color: #a4c3b2;
+}
+
+.operator:hover {
+    background-color: #85b89d;
+}
+
+.operator:active {
+    background-color: #699e82;
+}
+
+#add {
+    height: 160px;
+    background-color: #8ac926;
+}
+
+#add:hover {
+    background-color: #85be29;
+}
+
+#add:active {
+    background-color: #72a521;
+}
+
+#clear {
+    background-color: #e63946;
+}
+
+#clear:hover {
+    background-color: #d43b48;
+}
+
+#clear:active {
+    background-color: #b12934;
+}
+
+#special {
+    width: 50%;
+}
+
+#special button {
+    width: 100%;
+}
+
+#equals {
+    width: 100%;
+    background-color: #ff7b00;
+}
+
+#equals:hover {
+    background-color: #f17a0a;
+}
+
+#equals:active {
+    background-color: #d86c08;
+}
