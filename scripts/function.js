@@ -6,9 +6,6 @@ let sClear = true;
 let oprCon = true;
 
 function operate(operator) {
-    console.log(operator);
-    console.log(sClear);
-    console.log(oprCon);
     if (operator == 'c') {
         clearAll();
         return;
@@ -35,7 +32,6 @@ function operate(operator) {
             break;
         case '-':
             subtract(temp);
-            console.log(temp);
             break;
         case '*':
             multiply(temp);
