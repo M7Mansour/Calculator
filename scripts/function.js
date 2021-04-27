@@ -173,6 +173,6 @@ function converte(operation) {
             current *= 1 / 0.25;
             break;
     }
-    // put the covert ammount on the screen
+    // put the converted ammount on the screen
     screen.value = current;
 }
